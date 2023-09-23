@@ -16,7 +16,7 @@ const [weatherData, setWeatherData] = useState({ ready: false });
     city: response.data.name,
     date: new Date(response.data.dt * 1000),
     description: response.data.weather[0].description,
-    iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    icon: response.data.weather[0].icon
 });       
     }
     function search() {

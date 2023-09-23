@@ -25,11 +25,11 @@ font-weight: 100;
 line-height: 19px;
 list-style: none;
 }
-.Weather img {
-    height: 64px;
+.Weather canvas {
+    margin-top: 5px;
     display: inline-block;
-    margin-right: 10px;
-    width: 64px;
+    margin-right: 5px;
+    
 }
 .Weather .temperature {
     font-weight: bold;
