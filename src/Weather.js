@@ -20,8 +20,10 @@ const [weatherData, setWeatherData] = useState({ ready: false });
 });       
     }
     function search() {
-        const apiKey = "c746ddb18d51fbcf7cf8913926311ab9";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+        const apiKey = "f3009e4852fa0a079dab291dabf020c4";
+        let encodedCity = encodeURIComponent(city);
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${encodedCity}&appid=${apiKey}&units=metric`;
+console.log(apiUrl);
            axios.get(apiUrl).then(handleResponse);
 
     }
