@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
@@ -29,7 +29,7 @@ console.log(apiUrl);
     }
 
     function handleSubmit(event) {
-        event.preventDafault();
+        event.preventDefault();
         search();
     }
 function handleCityChange(event) {
