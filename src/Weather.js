@@ -13,6 +13,7 @@ const [weatherData, setWeatherData] = useState({ ready: false });
     ready: true,
     temperature: response.data.main.temp,
     humidity: response.data.main.humidity,
+    coordinates: response.data.coord,
     wind: response.data.wind.speed,
     city: response.data.name,
     date: new Date(response.data.dt * 1000),
@@ -52,7 +53,7 @@ if (weatherData.ready) {
                 </div>
             </form>
             <WeatherInfo data={weatherData} /> 
-             <WeatherForecast /> 
+             <WeatherForecast coordinates={weatherData.coordinates} /> 
         </div>
         );
 
