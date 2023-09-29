@@ -25,10 +25,10 @@ function day() {
                     <WeatherIcon code={props.data.weather[0].icon} size={36} />
                     <div className="WeatherForecast-temperatures">
                         <span className="WeatherForecast-temperature-max">
-                            {maxTemperature()}
-                        </span>
+                            {maxTemperature()}C
+                        </span> |
                         <span className="WeatherForecast-temperature-min">
-                        {minTemperature()}
+                        {minTemperature()}C
                         </span>
                     </div>   
                     </div>
